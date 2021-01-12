@@ -11,6 +11,7 @@ const outputPath = path.join(OUTPUT_DIR, "team.html");
 const render = require("./lib/htmlRenderer");
 
 const teamMembers = [];
+
 const employeeRole = [
         {
         type: "list",
@@ -22,23 +23,67 @@ const managerQuest = [
         {
             type: "input",
             message: "What is your manager's name?",
-            name: "managerName",
+            name: "name",
         },
         {
             type: "input",
             message: "What is your manager's employee ID?",
-            name: "managerID",
+            name: "id",
         },
         {
             type: "input",
             message: "What is your manager's email?",
-            name: "managerEmail",
+            name: "email",
         },
         {
             type: "input",
             message: "What is your manager's office number?",
-            name: "officeNumber",
+            name: "office",
         }, ];
+
+const engineerQuest = [
+            {
+                type: "input",
+                message: "What is the engineer\'s name?",
+                name: "name",
+            },
+            {
+                type: "input",
+                message: "What is the engineer\'s ID?",
+                name: "id",
+            },
+            {
+                type: "input",
+                message: "What is the engineer\'s email?",
+                name: "email",
+            },
+            {
+                type: "input",
+                message: "What is the engineer\'s Github name?",
+                name: "github",
+            }, ];
+
+const internQuest = [
+            {
+                type: "input",
+                message: "What is the intern\'s name?",
+                name: "name",
+                },
+            {
+                type: "input",
+                message: "What is the intern\'s ID?",
+                name: "id",
+            },
+            {
+                type: "input",
+                message: "What is the intern\'s email?",
+                name: "email",
+            },
+            {
+                type: "input",
+                message: "What is the intern\'s university?",
+                name: "school",
+            }, ];            
     
 // Write code to use inquirer to gather information about the development team members,
 // and to create objects for each team member (using the correct classes as blueprints!)
